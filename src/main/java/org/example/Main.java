@@ -21,8 +21,8 @@ public class Main {
 
         List<Player> players = new ArrayList<>();
         players.add(new Player("Nikhil", new Symbol("X")));
-        players.add(new Player("Sandeep", new Symbol("O")));
-        //players.add(new Bot("Bot1", new Symbol("O"), BotDiffcultyLevel.EASY));
+        //players.add(new Player("Sandeep", new Symbol("O")));
+        players.add(new Bot("Bot1", new Symbol("O"), BotDiffcultyLevel.EASY));
 
         List<WinningStrategy> strategies = new ArrayList<>();
         strategies.add(new RowWinningStrategy());

@@ -43,7 +43,7 @@ public class Game {
         System.out.println("Current turn: " + currentPlayer.getName());
         // Move logic to be implemented
 
-        Move move = currentPlayer.makeMove();
+        Move move = currentPlayer.makeMove(board);
         if(!validateMove(move)) {
             System.out.println("Invalid move! Try again.");
             throw new InvalidMoveException("Invalid move attempted by player: " + currentPlayer.getName());

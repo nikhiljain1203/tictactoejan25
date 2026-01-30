@@ -19,7 +19,7 @@ public class Player {
         this.type = PlayerType.HUMAN;
     }
 
-    public Move makeMove() {
+    public Move makeMove(Board board) {
         System.out.println(" Enter Row for the move: ");
         int row = scanner.nextInt();
         System.out.println(" Enter Column for the move: ");
